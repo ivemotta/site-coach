@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Frases Coach</h1>
+    <h1>seja seu compromisso</h1>
+    <p>cadastre sua frase coach</p>
+       <p>{{sucesso}}</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="">nome:</label>
+        <input name="nome" type="text" required>
+
+        <label for="">frase inspiradora:</label>
+        <textarea name="frase" id="" cols="30" rows="10" required> </textarea>
+
+        <label for="">pessoa que motivou:</label>
+        <input name="inspirador" type="text">
+
+        <input type="submit" value="envia ai meu parcero">
+    </form>
 </body>
 </html>
