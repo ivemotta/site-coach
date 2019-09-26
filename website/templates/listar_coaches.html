@@ -9,9 +9,11 @@
 <body>
     <h1>lista dos queridíssimos:</h1>
     {% for item in listar_coaches %}
-    <p>nome:</p> {{item.nome}}
-    <p>frasinha:</p> {{item.frase}}
-    <p>quem foi o responsável:</p> {{item.inspirador}}
+        <p><strong>nome:</strong> {{item.nome}}</p> 
+        <p><strong>frasinha:</strong> {{item.frase}}</p> 
+        <p><strong>quem foi o responsável:</strong> {{item.inspirador}}</p>
+        <a href='/coaches/delete/{{item.id}}'>apagar este otario</a>
+        <hr>
     {% endfor %}
     
 </body>

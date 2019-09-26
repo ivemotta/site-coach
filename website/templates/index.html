@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>seja seu compromisso</h1>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1 class = "titulo_index">seja seu compromisso</h1>
     <p>cadastre sua frase coach</p>
+    <p><a class= "inspiracao" href="coaches/listar">veja os otario que já tão aqui</a></p>
        <p>{{sucesso}}</p>
     <form action="" method="post">
         {% csrf_token %}
@@ -16,12 +13,12 @@
         <input name="nome" type="text" required>
 
         <label for="">frase inspiradora:</label>
-        <textarea name="frase" id="" cols="30" rows="10" required> </textarea>
+        <input name="frase" id="" cols="30" rows="10" required>
 
         <label for="">pessoa que motivou:</label>
         <input name="inspirador" type="text">
 
         <input type="submit" value="envia ai meu parcero">
     </form>
-</body>
-</html>
+
+{% endblock %}

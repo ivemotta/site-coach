@@ -1,0 +1,22 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.titulo_index{
+    color: coral;
+    font-size: 40pt;
+}
+
+.inspiracao{
+    text-decoration: none;
+    font-size: 15pt;
+    color: crimson;
+}
+
+label{
+    font-size: 14pt;
+}
+
+input{
+    height: 50pt;
+}

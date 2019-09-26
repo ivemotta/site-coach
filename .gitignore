@@ -1,8 +1,30 @@
-env
-/env
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+.Python
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Environments
+.banana
 .env
 .venv
-/venv
+env/
+venv/
+ENV/
 
-vscode
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+#Ide
 .vscode
+.idea
+
+Pipfile
